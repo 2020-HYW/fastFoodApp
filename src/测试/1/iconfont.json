@@ -1,0 +1,23 @@
+{
+  "id": "2162081",
+  "name": "wm",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7865400",
+      "name": "草莓",
+      "font_class": "food-strawberry",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7865401",
+      "name": "甜甜圈",
+      "font_class": "food-doughnut",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

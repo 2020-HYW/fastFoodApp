@@ -2,20 +2,21 @@
 与后台交互模块
 */
 import ajax from './ajax'
+const BASE_URL = '/api'
 /**
 * 获取地址信息(根据经纬度串)
 */
-export const reqAddress = geohash => ajax('/api/position/' + geohash)
+export const reqAddress = geohash => ajax(`${BASE_URL}/position/${geohash}`)
 
 
 /**
 * 获取msite 页面食品分类列表
 */
-export const reqCategorys = () => ajax('/api/index_category')
+export const reqCategorys = () => ajax(BASE_URL+'/index_category')
 /**
 * 获取msite 商铺列表(根据经纬度)
 */
-export const reqShops = ({latitude, longitude}) => ajax('/api/shops', {latitude, longitude})
+export const reqShops = ({latitude, longitude}) => ajax(BASE_URL+'/shops', {latitude, longitude})
 /**
 * 账号密码登录
 */
